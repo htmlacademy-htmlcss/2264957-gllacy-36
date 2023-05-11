@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color:#2d3440;
+  background-color: #feafc3;
+}
+
+/* Навигация */
+
+.page-header {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
+.logo-header {
+  display: block;
+  width: 137px;
+  height: 56px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+ }
+
+.navigation-link {
+  text-decoration: none;
+  color:#2d3440;
+}
+
+.navigation-user {
+  width: 431px;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.phone-number {
+font-family: "Inter";
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+text-decoration: none;
+color: inherit;
+}
