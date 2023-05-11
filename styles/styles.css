@@ -36,10 +36,22 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
-  color:#2d3440;
+  color: #2d3440;
   background-color: #feafc3;
 }
 
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
 /* Навигация */
 
 .page-header {
@@ -64,11 +76,11 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
- }
+}
 
 .navigation-link {
   text-decoration: none;
-  color:#2d3440;
+  color: #2d3440;
 }
 
 .navigation-user {
@@ -78,10 +90,94 @@ body {
 }
 
 .phone-number {
-font-family: "Inter";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Слайдер */
+.slider-peacture {
+  display: flex;
+}
+
+.slider-description {
+  width: 429px;
+}
+
+.title-items-slider {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.title-paragraph-slider {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.help-link {
+  min-width: 139px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #2d3440;
+  background-color: #fcfcfc;
+  padding: 12px 32px;
+  border-radius: 50px 50px 50px 50px;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+}
+
+.slider-pagination {
+  list-style-type: none;
+}
+
+.social-list {
+  list-style-type: none;
+}
+
+/* Акции */
+
+.special-offer {
+  display: flex;
+}
+
+
+.offer-main-title {
+  display: block;
+  min-width: 434px;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.offer-title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.offer-paragraph {
 font-size: 16px;
-font-weight: 700;
-line-height: 20px;
-text-decoration: none;
-color: inherit;
+font-weight: 400;
+line-height: 22px;
+margin: 0;
+padding: 0;
+}
+
+.help-link-offer {
+  text-decoration: none;
+  width: 176px;
 }
