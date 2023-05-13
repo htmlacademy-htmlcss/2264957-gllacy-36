@@ -107,16 +107,12 @@ body {
 }
 
 .title-items-slider {
-  margin: 0;
-  padding: 0;
   font-size: 36px;
   font-weight: 900;
   line-height: 46px;
 }
 
 .title-paragraph-slider {
-  margin: 0;
-  padding: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -143,6 +139,16 @@ body {
   list-style-type: none;
 }
 
+.main-text {
+  margin: 0;
+  padding: 0;
+}
+
+.title-items {
+  margin: 0;
+  padding: 0;
+}
+
 /* Акции */
 
 .special-offer {
@@ -153,8 +159,6 @@ body {
 .offer-main-title {
   display: block;
   min-width: 434px;
-  margin: 0;
-  padding: 0;
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
@@ -170,14 +174,69 @@ body {
 }
 
 .offer-paragraph {
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-margin: 0;
-padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .help-link-offer {
   text-decoration: none;
   width: 176px;
+}
+
+/* Популярные вкусы */
+.popular-main-title {
+  margin: 0;
+  padding: 0;
+}
+
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-item {
+  margin: 0;
+  padding: 0;
+}
+
+.product-title {
+  margin: 0;
+  padding: 0;
+}
+
+.product-price {
+  margin: 0;
+  padding: 0;
+}
+
+/* Приемущества */
+
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Контакты */
+
+.contact-text {
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+text-decoration: none;
+color: #2d3440;
+}
+
+.footer-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer-item {
+  margin: 0;
+  padding: 0;
 }
