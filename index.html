@@ -15,7 +15,8 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <img class="logo-header" src="images/icons/logo-gllasy.svg" width="137" height="56" alt="Логотип магазина глейси">
+            <img class="logo-header" src="images/icons/logo-gllasy.svg" width="137" height="56"
+              alt="Логотип магазина глейси">
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-left" href="catalog.html">Каталог</a>
@@ -62,9 +63,10 @@
                   и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
                 <button class="help-link help-link-slider" type="button">Заказать</button>
               </div>
-              <img class="slider-image-current" src="#" width="" height="" alt="">
-              <img class="slider-image" src="#" width="" height="" alt="">
-              <img class="slider-image" src="#" width="" height="" alt="">
+              <img class="slider-image-current" src="images/ice-cream/ice-main-strawberry.png" width="244" height="507"
+                alt="Морженное в вафельном рожке с клубничным джемом">
+              <button class="slider-images-banana" type="button"></button>
+              <button class="slider-images-caramel" type="button"></button>
             </li>
             <li class="slider-peacture slider-peacture-two">
               <h3 class="visually-hidden">Слайд 2</h3>
@@ -75,9 +77,10 @@
                   вам свежесть и наслаждение даже в самый жаркий летний день. </p>
                 <button class="help-link help-link-slider" type="button">Заказать</button>
               </div>
-              <img class="slider-image-current" src="#" width="" height="" alt="">
-              <img class="slider-image" src="#" width="" height="" alt="">
-              <img class="slider-image" src="#" width="" height="" alt="">
+              <img class="slider-image-current" src="images/ice-cream/ice-main-banana.png" width="244" height="507"
+                alt="Морженное в вафельном рожке с клубничным джемом">
+              <button class="slider-images-caramel" type="button"></button>
+              <button class="slider-images-strawberry" type="button"></button>
             </li>
             <li class="slider-peacture slider-peacture-three">
               <h3 class="visually-hidden">Слайд 3</h3>
@@ -89,9 +92,12 @@
                   кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
                 <button class="help-link help-link-slider" type="button">Заказать</button>
               </div>
-              <img class="slider-image-current" src="#" width="" height="" alt="">
-              <img class="slider-image" src="#" width="" height="" alt="">
-              <img class="slider-image" src="#" width="" height="" alt="">
+              <div class="images-wrapper">
+                <img class="slider-image-current" src="images/ice-cream/ice-main-caramel.png" width="350" height="507"
+                  alt="Морженное в вафельном рожке с клубничным джемом">
+                <button class="slider-images-strawberry" type="button"></button>
+                <button class="slider-images-banana" type="button"></button>
+              </div>
             </li>
           </ul>
           <div class="slider-controls">
@@ -165,6 +171,8 @@
         <p class="popular-main-title">Попробуйте самые популярные вкусы нашего мороженого</p>
         <ul class="product-list">
           <li class="product-item">
+            <img class="ice-catalog-image" src="images/ice-cream/ice-raspberries.png" width="168" height="168"
+              alt="Шарик мороженного малинового цвета">
             <h3 class="product-title">Малинка</h3>
             <p class="product-discription main-text">Сливочное мороженое с малиновым джемом</p>
             <p class="product-price">310 ₽/кг</p>
@@ -172,6 +180,8 @@
                 class="visually-hidden">Корзина</span></button>
           </li>
           <li class="product-item">
+            <img class="ice-catalog-image" src="images/ice-cream/ice-pistachio.png" width="168" height="168"
+              alt="Шарик мороженного фисташкового цвета с орешками">
             <h3 class="product-title">Фисташка</h3>
             <p class="product-discription main-text">Фисташковый пломбир с кусочками шоколада</p>
             <p class="product-price">340 ₽/кг</p>
@@ -179,6 +189,8 @@
                 class="visually-hidden">Корзина</span></button>
           </li>
           <li class="product-item">
+            <img class="ice-catalog-image" src="images/ice-cream/ice-blackberry.png" width="168" height="168"
+              alt="Шарик мороженного кремового цвета с полосками черничного джема">
             <h3 class="product-title">Черника</h3>
             <p class="product-discription main-text">Крем-брюле
               с черничным джемом</p>
@@ -187,6 +199,8 @@
                 class="visually-hidden">Корзина</span></button>
           </li>
           <li class="product-item">
+            <img class="ice-catalog-image" src="images/ice-cream/ice-babble.png" width="168" height="168"
+              alt="Шарик мороженного синего цвета с разноцветной присыпкой">
             <h3 class="product-title">Бабл-гам</h3>
             <p class="product-discription main-text">Ванильный пломбир
               со сладкой посыпкой</p>
@@ -216,6 +230,7 @@
         </ul>
       </section>
       <!-- Блог -->
+      <div class="news-wrapper">
       <section class="blog">
         <h2 class="visually-hidden">Рекламное окно блога</h2>
         <p class="main-text">Новое в нашем блоге</p>
@@ -238,36 +253,37 @@
           </span>
         </form>
       </section>
+    </div>
       <!-- Доставка -->
       <section class="delivery">
         <h2 class="title-items">Доставка любимого мороженого на дом</h2>
         <p class="main-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
           доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-          <div class="modal-content">
-            <p class="main-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p class="field-group fild-form-date">
-                  <label class="form-label" for="fild-date">
-                    Дата</label>
-                  <input class="field-delivery fild-name" type="date" id="fild-date" name="fild-date"
-                    placeholder="01.04.2020" required>
-                </p>
-                <p class="field-group fild-form-phone">
-                  <label class="form-label" for="fild-phone">
-                    Телефон</label>
-                  <input class="field-delivery fild-phone" type="tel" id="fild-phone" name="fild-phone" placeholder="+7 800 999-00-00"
-                    required>
-                </p>
-                <p class="field-group fild-form-address">
-                  <label class="form-label" for="fild-address">
-                    Адрес
-                  </label>
-                  <input class="field-delivery fild-address" type="text" id="fild-address" name="fild-address"
-                    placeholder="ул. Большая Конюшенная, 19/8" required>
-                </p>
-              <button class="help-link help-link-order" type="submit">Отправить</button>
-            </form>
-          </div>
+        <div class="modal-content">
+          <p class="main-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group fild-form-date">
+              <label class="form-label" for="fild-date">
+                Дата</label>
+              <input class="field-delivery fild-name" type="date" id="fild-date" name="fild-date"
+                placeholder="01.04.2020" required>
+            </p>
+            <p class="field-group fild-form-phone">
+              <label class="form-label" for="fild-phone">
+                Телефон</label>
+              <input class="field-delivery fild-phone" type="tel" id="fild-phone" name="fild-phone"
+                placeholder="+7 800 999-00-00" required>
+            </p>
+            <p class="field-group fild-form-address">
+              <label class="form-label" for="fild-address">
+                Адрес
+              </label>
+              <input class="field-delivery fild-address" type="text" id="fild-address" name="fild-address"
+                placeholder="ул. Большая Конюшенная, 19/8" required>
+            </p>
+            <button class="help-link help-link-order" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
       <!-- Контакты -->
       <section class="cotact">
@@ -300,30 +316,33 @@
             </a>
           </li>
         </ul>
-    </div>
-  </section>
-  <section class="footer-link-group">
-    <ul class="footer-list">
-      <li class="footer-item">
-        <a class="navigation-link navigation-link-footer" href="#">Для поставщиков</a>
-      </li>
-      <li class="footer-item">
-        <a class="navigation-link navigation-link-footer" href="#">Наши документы</a>
-      </li>
-      <li class="footer-item">
-        <a class="navigation-link navigation-link-footer" href="#">О производстве</a>
-      </li>
-      <li class="footer-item">
-        <a class="navigation-link navigation-link-footer" href="#">Экологические стандарты</a>
-      </li>
-    </ul>
-  </section>
-  <div class="html-academy">
-    <p class="logo-html-footer">
-      <a class="logo-footer-html" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип html academy</span>
-      </a>
-      <span class="footer-description">Сделано в .html academy © 2021</span>
-  </div>
+        </div>
+      </section>
+      <article class="footer-link-group">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="navigation-link navigation-link-footer" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-item">
+            <a class="navigation-link navigation-link-footer" href="#">О производстве</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="navigation-link navigation-link-footer" href="#">Наши документы</a>
+          </li>
+          <li class="footer-item">
+            <a class="navigation-link navigation-link-footer" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </article>
+      <div class="html-academy">
+        <p class="logo-html-footer">
+          <a class="logo-footer-html" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип html
+              academy</span>
+          </a>
+          <span class="footer-description">Сделано в .html academy © 2021</span>
+      </div>
     </footer>
   </body>
 
