@@ -104,6 +104,7 @@ body {
 
 .slider-description {
   width: 429px;
+  align-self: center;
 }
 
 .title-items-slider {
@@ -151,6 +152,11 @@ body {
 
 .images-wrapper {
   display: flex;
+}
+
+.slider-images {
+  align-self: center;
+  margin: 0;
 }
 
 .slider-images-caramel {
