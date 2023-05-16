@@ -297,6 +297,16 @@ body {
   min-width: 224px;
 }
 
+.main-text-blog {
+ text-decoration: none;
+  color: #2d3440;
+}
+
+.blog-description {
+  text-decoration: none;
+  color: #2d3440;
+}
+
 /* Подписаться */
 
 .subscribe {
@@ -354,4 +364,37 @@ body {
   height: 27px;
   background-position: center;
   background-repeat: no-repeat;
+}
+/* Каталог */
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.inner-header-title {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+}
+
+.pagination-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #2d3440;
 }
