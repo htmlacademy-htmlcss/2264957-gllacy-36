@@ -238,6 +238,11 @@ body {
   border-radius: 16px 16px 16px 16px;
 }
 
+.offer-wrapper {
+  width: 317px;
+  padding: 36px 36px;
+}
+
 
 .offer-main-title {
   display: block;
@@ -246,10 +251,11 @@ body {
   font-weight: 900;
   line-height: 46px;
   text-align: center;
+  margin-bottom: 55px;
 }
 
 .offer-title {
-  margin: 0;
+  margin: 0 0 28px 0;
   padding: 0;
   font-size: 24px;
   font-weight: 700;
@@ -260,6 +266,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  margin-bottom: 28px;
 }
 
 .help-link-offer {
@@ -286,8 +293,16 @@ body {
 }
 
 .product-item {
+  width: 270px;
+  background-color: #fcfcfc;
   margin: 0;
   padding: 0;
+}
+
+.ice-catalog-image {
+  position: relative;
+  top: -51px;
+  left: 50%;
 }
 
 .product-title {
@@ -328,7 +343,7 @@ body {
 }
 
 .main-text-blog {
- text-decoration: none;
+  text-decoration: none;
   color: #2d3440;
 }
 
@@ -395,6 +410,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 /* Каталог */
 
 .breadcrumbs {
