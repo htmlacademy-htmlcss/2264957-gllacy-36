@@ -285,6 +285,7 @@ body {
 
 .product-list {
   display: grid;
+  justify-content: center;
   grid-template-columns: 270px 270px 270px 270px;
   gap: 30px;
   margin: 0;
@@ -303,6 +304,7 @@ body {
   position: relative;
   top: -51px;
   left: 50%;
+  transform: translateX(-50%);
 }
 
 .product-title {
