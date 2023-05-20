@@ -13,42 +13,43 @@
     <h1 class="visually-hidden">Магазин Глейси</h1>
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list ">
+        <ul class="navigation-list navigation-link-left">
           <li class="navigation-item">
-            <img class="logo-header" src="images/icons/logo-gllasy.svg" width="137" height="56" alt="Логотип магазина глейси">
+            <img class="logo-header" src="images/icons/logo-gllasy.svg" width="137" height="56"
+              alt="Логотип магазина глейси">
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-left" href="catalog.html">Каталог</a>
+            <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-left" href="#">Доставка и оплата</a>
+            <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-left" href="#">О компании</a>
+            <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
-        <ul class="navigation-list ">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-right" href="#"> <span class="visually-hidden">
+          <li class="navigation-item ">
+            <button class="navigation-link navigation-link-right" href="#"> <span class="visually-hidden">
                 Поиск
-              </span></a>
+              </span></button>
+          </li>
+          <li class="navigation-item ">
+            <button class="navigation-link navigation-link-right" href="#">Вход</button>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-right" href="#">Вход</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-right" href="#">2 товара <span class="visually-hidden">
+            <button class="navigation-link navigation-link-right" href="#">2 товара <span class="visually-hidden">
                 Корзина
-              </span></a>
+              </span></button>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-inner">
-      <h1 class="visually-hidden">Страница каталога с мороженным</h1>
+      <h2 class="visually-hidden">Страница каталога с мороженным</h2>
       <header class="inner-header">
         <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -92,39 +93,40 @@
                   <label class="catalog-filter-label">
                      <input class="range-input" type="number" value="500" name="max-price" style="width: 52px"> ₽
                   </label>
-
+                </div>
+            </fieldset>
             <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Жирность</legend>
                 <label class="control">
-                  <input class="control-input" type="radio" name="precent">0%
+                  <input class="control-input" type="radio" value="0%" name="precent">0%
                 </label>
                 <label class="control">
-                  <input class="control-input" type="radio" name="precent" checked>До 10%
+                  <input class="control-input" type="radio" value="До 10%" name="precent" checked>До 10%
                 </label>
                 <label class="control">
-                  <input class="control-input" type="radio" name="precent">До 30%
+                  <input class="control-input" type="radio" value="До 30%" name="precent">До 30%
                 </label>
                 <label class="control">
-                  <input class="control-input" type="radio" name="precent">Свыше 30%
+                  <input class="control-input" type="radio" value="Свыше 30%" name="precent">Свыше 30%
                 </label>
               </fieldset>
 
               <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Наполнители</legend>
               <label class="control">
-                <input class="control-input" type="checkbox" name="precent" checked>шоколадные
+                <input class="control-input" type="checkbox" value="шоколадные" name="precent" checked>шоколадные
               </label>
               <label class="control">
-                <input class="control-input" type="checkbox" name="precent" checked>сахарные посыпки
+                <input class="control-input" type="checkbox" value="сахарные посыпки" name="precent" checked>сахарные посыпки
               </label>
               <label class="control">
-                <input class="control-input" type="checkbox" name="precent">фрукты
+                <input class="control-input" type="checkbox" value="фрукты" name="precent">фрукты
               </label>
               <label class="control">
-                <input class="control-input" type="checkbox" name="precent">сиропы
+                <input class="control-input" type="checkbox" value="сиропы" name="precent">сиропы
               </label>
               <label class="control">
-                <input class="control-input" type="checkbox" name="precent">джемы
+                <input class="control-input" type="checkbox" value="джемы" name="precent">джемы
               </label>
             </fieldset>
             <button class="button" type="submit">Применить</button>
@@ -262,13 +264,11 @@
               <a class="pagination-link" href="#">5</a>
             </li>
           </ul>
-        </section>
       </header>
     </main>
 
     <footer class="page-footer">
-      <section class="social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+      <div class="social">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link social-link-tg" href=" https://t.me/htmlacademy ">
@@ -286,30 +286,33 @@
             </a>
           </li>
         </ul>
-    </div>
-  </section>
-  <section class="footer-link-group">
-    <ul class="footer-list">
-      <li class="footer-item">
-        <a class="navigation-link navigation-link-footer" href="#">Для поставщиков</a>
-      </li>
-      <li class="footer-item">
-        <a class="navigation-link navigation-link-footer" href="#">Наши документы</a>
-      </li>
-      <li class="footer-item">
-        <a class="navigation-link navigation-link-footer" href="#">О производстве</a>
-      </li>
-      <li class="footer-item">
-        <a class="navigation-link navigation-link-footer" href="#">Экологические стандарты</a>
-      </li>
-    </ul>
-  </section>
-  <div class="html-academy">
-    <p class="logo-html-footer">
-      <a class="logo-footer-html" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип html academy</span>
-      </a>
-      <span class="footer-description">Сделано в .html academy © 2021</span>
-  </div>
+      </div>
+      <div class="footer-link-group">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="navigation-link navigation-link-footer" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-item">
+            <a class="navigation-link navigation-link-footer" href="#">О производстве</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="navigation-link navigation-link-footer" href="#">Наши документы</a>
+          </li>
+          <li class="footer-item">
+            <a class="navigation-link navigation-link-footer" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="html-academy">
+        <p class="logo-html-footer">
+          <a class="logo-footer-html" href="https://htmlacademy.ru"><span class="visually-hidden">Логотип html
+              academy</span>
+          </a>
+          <span class="footer-description">Сделано в .html academy © 2021</span>
+        </p>
+      </div>
     </footer>
   </body>
 

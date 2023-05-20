@@ -28,22 +28,22 @@
             <a class="navigation-link" href="#">О компании</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user navigation-link-right">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"> <span class="visually-hidden">
+          <li class="navigation-item ">
+            <button class="navigation-link navigation-link-right" href="#"> <span class="visually-hidden">
                 Поиск
-              </span></a>
+              </span></button>
+          </li>
+          <li class="navigation-item ">
+            <button class="navigation-link navigation-link-right" href="#">Вход</button>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">2 товара <span class="visually-hidden">
+            <button class="navigation-link navigation-link-right" href="#">2 товара <span class="visually-hidden">
                 Корзина
-              </span></a>
+              </span></button>
           </li>
         </ul>
       </nav>
@@ -63,8 +63,8 @@
               </div>
               <img class="slider-image-current" src="images/ice-cream/ice-main-strawberry.png" width="244" height="507"
                 alt="Морженное в вафельном рожке с клубничным джемом">
-              <button class="slider-images slider-images-banana" type="button"></button>
-              <button class="slider-images slider-images-caramel" type="button"></button>
+              <button class="slider-images slider-images-banana" type="button"><span class="visually-hidden">Следующий товар</span></button>
+              <button class="slider-images slider-images-caramel" type="button"><span class="visually-hidden">Следующий товар</span></button>
             </li>
             <li class="slider-peacture slider-peacture-two">
               <div class="slider-description">
@@ -76,8 +76,8 @@
               </div>
               <img class="slider-image-current" src="images/ice-cream/ice-main-banana.png" width="244" height="507"
                 alt="Морженное в вафельном рожке с клубничным джемом">
-              <button class="slider-images slider-images-caramel" type="button"></button>
-              <button class="slider-images slider-images-strawberry" type="button"></button>
+              <button class="slider-images slider-images-caramel" type="button"><span class="visually-hidden">Следующий товар</span></button>
+              <button class="slider-images slider-images-strawberry" type="button"><span class="visually-hidden">Следующий товар</span></button>
             </li>
             <li class="slider-peacture slider-peacture-three">
               <div class="slider-description">
@@ -91,8 +91,8 @@
               <div class="images-wrapper">
                 <img class="slider-image-current" src="images/ice-cream/ice-main-caramel.png" width="350" height="507"
                   alt="Морженное в вафельном рожке с клубничным джемом">
-                <button class="slider-images slider-images-strawberry" type="button"></button>
-                <button class="slider-images slider-images-banana" type="button"></button>
+                <button class="slider-images slider-images-strawberry" type="button"><span class="visually-hidden">Следующий товар</span></button>
+                <button class="slider-images slider-images-banana" type="button"><span class="visually-hidden">Следующий товар</span></button>
               </div>
             </li>
           </ul>
@@ -121,7 +121,7 @@
               </button>
             </li>
           </ul>
-          <section class="social">
+          <article class="social">
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="social-list">
               <li class="social-item">
@@ -140,12 +140,12 @@
                 </a>
               </li>
             </ul>
-      </section>
+          </article>
       </section>
       <!-- Акции -->
       <section class="special-offer">
         <h2 class="visually-hidden">Акционные предложения</h2>
-        <p class="title-items offer-main-title">Заказывайте мороженое и получайте подарки!</p>
+        <p class="title-items offer-main-title">Заказывайте мороженое<br> и получайте подарки!</p>
         <div class="offer-list">
           <div class="offer-wrapper">
           <h3 class="offer-title">Малинка даром!</h3>
@@ -168,7 +168,7 @@
       <!-- Популярные вкусы -->
       <section class="popular-flavor">
         <h2 class="visually-hidden">Популярные вкусы мороженного</h2>
-        <p class="popular-main-title">Попробуйте самые популярные вкусы нашего мороженого</p>
+        <p class="popular-main-title">Попробуйте самые популярные<br> вкусы нашего мороженого</p>
         <ul class="product-list">
           <li class="product-item">
             <img class="ice-catalog-image" src="images/ice-cream/ice-raspberries.png" width="168" height="168"
@@ -233,8 +233,7 @@
       <!-- Блог -->
       <div class="news-wrapper">
       <section class="blog">
-        <h2 class="visually-hidden">Рекламное окно блога</h2>
-        <a class="main-text main-text-blog" href="#">Новое в нашем блоге</a>
+        <h2 class="main-text main-text-blog" href="#">Новое в нашем блоге</h2>
         <a class="blog-description" href="#">10 способов сервировки фруктовых щербетов
           к столу</a>
       </section>
@@ -247,7 +246,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="sending-subscribe">Подписаться</label>
           <span class="input-subscribe-wrapper">
-            <input class="input-subscribe" placeholder="email@example.com" type="text" name="sending-subscribe"
+            <input class="input-subscribe" placeholder="email@example.com" type="mail" name="sending-subscribe"
               id="sending-subscribe" required>
           </span>
           <span class="button-subscribe-wrapper">
@@ -342,6 +341,7 @@
               academy</span>
           </a>
           <span class="footer-description">Сделано в .html academy © 2021</span>
+        </p>
       </div>
     </footer>
   </body>
