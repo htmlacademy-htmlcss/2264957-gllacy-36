@@ -91,6 +91,14 @@ body {
   padding: 8px 16px;
 }
 
+.navigation-link-right {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #ffcbd8;
+  border-radius: 50px 50px 50px 50px;
+  border: none;
+}
+
 .navigation-user {
   width: 431px;
   margin-left: auto;
@@ -106,6 +114,10 @@ body {
 }
 
 /* Слайдер */
+.main-index {
+  width: 1170px;
+  margin: 0 auto;
+}
 
 .popular-goods {
   margin-bottom: 80px;
@@ -226,7 +238,6 @@ body {
 }
 
 .offer-main-title {
-  width: 434px;
   grid-column: 1/3;
   text-align: center;
 }
@@ -274,6 +285,10 @@ body {
 }
 
 /* Популярные вкусы */
+.popular-flavor {
+  margin-bottom: 80px;
+}
+
 .popular-main-title {
   margin: 0;
   padding: 0 0 56px 0;
@@ -322,9 +337,24 @@ body {
   border: 24px solid;
   border-image: url(../images/background/background-advantages.jpg) 24 round round;
   background-color: #fcfcfc;
+  padding: 40px 56px;
+  margin-bottom: 80px;
+}
+
+.title-items-advantages {
+font-size: 32px;
+font-weight: 900;
+line-height: 46px;
+text-align: center;
+  margin-bottom: 56px;
 }
 
 .advantages-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 506px 506px;
+  column-gap: 32px;
+  row-gap: 40px;
   margin: 0;
   padding: 0;
   list-style-type: none;
