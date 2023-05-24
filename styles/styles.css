@@ -230,6 +230,7 @@ body {
 }
 
 .ice-wrapper {
+  position: relative;
   width: 367px;
   margin-left: 26px;
 }
@@ -245,6 +246,9 @@ body {
   background-repeat: no-repeat;
   display: block;
   z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 
 
 }
@@ -271,8 +275,13 @@ body {
 }
 
 .slider-images {
-  align-self: center;
+align-self: center;
   margin: 0;
+}
+
+.slider-image-current {
+  display: inline;
+  text-align: center;
 }
 
 .slider-images-caramel {
