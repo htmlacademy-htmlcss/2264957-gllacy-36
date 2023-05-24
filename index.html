@@ -19,7 +19,7 @@
               alt="Логотип магазина глейси">
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <a class="navigation-link navigation-link-catalog" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -29,19 +29,19 @@
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-right">
             <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
-          <li class="navigation-item ">
-            <button class="navigation-link navigation-link-right" href="#"> <span class="visually-hidden">
+          <li class="navigation-item navigation-item-right">
+            <button class="navigation-link navigation-link-right navigation-link-search" href="#"> <span class="visually-hidden">
                 Поиск
               </span></button>
           </li>
-          <li class="navigation-item ">
-            <button class="navigation-link navigation-link-right" href="#">Вход</button>
+          <li class="navigation-item navigation-item-right">
+            <button class="navigation-link navigation-link-right navigation-link-enter" href="#">Вход</button>
           </li>
-          <li class="navigation-item">
-            <button class="navigation-link navigation-link-right" href="#">2 товара <span class="visually-hidden">
+          <li class="navigation-item navigation-item-right">
+            <button class="navigation-link navigation-link-right navigation-link-add" href="#">2 товара <span class="visually-hidden">
                 Корзина
               </span></button>
           </li>
@@ -61,8 +61,10 @@
                   и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
                 <button class="help-link help-link-slider" type="button">Заказать</button>
               </div>
+              <div class="ice-wrapper">
               <img class="slider-image-current" src="images/ice-cream/ice-main-strawberry.png" width="244" height="507"
                 alt="Морженное в вафельном рожке с клубничным джемом">
+              </div>
               <button class="slider-images slider-images-banana" type="button"><span class="visually-hidden">Следующий товар</span></button>
               <button class="slider-images slider-images-caramel" type="button"><span class="visually-hidden">Следующий товар</span></button>
             </li>
@@ -147,14 +149,14 @@
         <h2 class="visually-hidden">Акционные предложения</h2>
         <p class="title-items offer-main-title">Заказывайте мороженое<br> и получайте подарки!</p>
         <div class="grid-wrapper">
-        <div class="offer-list">
+        <div class="offer-list offer-list-raspberries">
           <h3 class="offer-title">Малинка даром!</h3>
           <p class="offer-paragraph main-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
             малинового
             варенья бесплатно.</p>
           <a class="help-link help-link-offer" href="#">Хочу подарок</a>
         </div>
-        <div class="offer-list">
+        <div class="offer-list offer-list-marshmallow">
           <h3 class="title-items offer-title">Маршмеллоу даром!</h3>
           <p class="offer-paragraph main-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
             совершенно
