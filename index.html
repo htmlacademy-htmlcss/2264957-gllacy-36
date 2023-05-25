@@ -95,9 +95,9 @@
               <div class="ice-wrapper">
                 <img class="slider-image-current" src="images/ice-cream/ice-main-caramel.png" width="350" height="507"
                   alt="Морженное в вафельном рожке с клубничным джемом">
+              </div>
                 <button class="slider-images slider-images-strawberry" type="button"><span class="visually-hidden">Следующий товар</span></button>
                 <button class="slider-images slider-images-banana" type="button"><span class="visually-hidden">Следующий товар</span></button>
-              </div>
             </li>
           </ul>
           <div class="slider-controls">
@@ -259,28 +259,27 @@
           Честно =&#41;</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="sending-subscribe">Подписаться</label>
-          <span class="input-subscribe-wrapper">
             <input class="input-subscribe" placeholder="email@example.com" type="mail" name="sending-subscribe"
               id="sending-subscribe" required>
-          </span>
-          <span class="button-subscribe-wrapper">
             <button class="help-link button-subscribe" type="submit">Отправить</button>
-          </span>
         </form>
       </section>
     </div>
       <!-- Доставка -->
       <section class="delivery">
-        <h2 class="title-items">Доставка любимого мороженого на дом</h2>
+        <div class="delivery-description">
+        <h2 class="title-items title-items-delivery">Доставка любимого мороженого на дом</h2>
         <p class="main-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
           доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-        <div class="modal-content">
-          <p class="main-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+        </div>
+        <div class="delivery-main">
+          <p class="main-text main-text-delivery">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="delivery-form-top">
             <p class="field-group fild-form-date">
               <label class="form-label" for="fild-date">
                 Дата</label>
-              <input class="field-delivery fild-name" type="date" id="fild-date" name="fild-date"
+              <input class="field-delivery fild-date" type="text" id="fild-date" name="fild-date"
                 placeholder="01.04.2020" required>
             </p>
             <p class="field-group fild-form-phone">
@@ -289,6 +288,7 @@
               <input class="field-delivery fild-phone" type="tel" id="fild-phone" name="fild-phone"
                 placeholder="+7 800 999-00-00" required>
             </p>
+          </div>
             <p class="field-group fild-form-address">
               <label class="form-label" for="fild-address">
                 Адрес

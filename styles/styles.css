@@ -275,7 +275,7 @@ body {
 }
 
 .slider-images {
-align-self: center;
+  align-self: center;
   margin: 0;
 }
 
@@ -373,6 +373,10 @@ align-self: center;
 
 /* Акции */
 
+.special-offer {
+  margin-bottom: 81px;
+}
+
 .grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -380,6 +384,7 @@ align-self: center;
 }
 
 .offer-list {
+  position: relative;
   width: 570px;
   min-height: 268px;
   background-color: #ff7799;
@@ -420,12 +425,27 @@ align-self: center;
 .offer-list-raspberries::after {
   content: "";
   position: absolute;
-display: inline-block;
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  background-image: url(../images/pictures/raspberries.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 23px;
+  right: 20px;
+}
+
+.offer-list-marshmallow::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
   width: 200px;
   height: 250px;
   background-image: url(../images/pictures/marshmallow.png);
   background-position: center;
   background-repeat: no-repeat;
+  top: 23px;
+  right: 20px;
 }
 
 /* Популярные вкусы */
@@ -468,6 +488,7 @@ display: inline-block;
 .product-wrapper {
   background-color: #fcfcfc;
   padding: 0 40px 24px 40px;
+  border-radius: 8px;
 }
 
 .ice-catalog-image {
@@ -486,6 +507,30 @@ display: inline-block;
   padding: 0;
   justify-content: space-between;
 }
+
+.product-link-vr {
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: #ff2f64;
+}
+
+.product-link-vr::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-image: url(../images/icons/icon-add.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
 
 /* Приемущества */
 .advantages {
@@ -520,6 +565,7 @@ display: inline-block;
 .news-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .blog {
@@ -564,24 +610,87 @@ display: inline-block;
   margin-bottom: 42px;
 }
 
+
 .input-subscribe {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 332px;
   padding: 16px 14px;
   border: 2px solid #b9b9b9;
   color: #b9b9b9;
   border-radius: 4px 4px 4px 4px;
+  box-sizing: border-box;
 }
 
 .button-subscribe {
   background-color: #ff2f64;
   color: #fcfcfc;
+  padding: 12px 32px;
+  margin-left: 14px;
 }
 
 /* Доставка */
 
 .delivery {
+  display: flex;
   background-image: url(../images/background/background-delivery.png);
   width: 1170px;
 }
+
+.delivery-main {
+  background-color: #fcfcfc;
+  padding: 40px 40px 42px 40px;
+  margin: 64px 64px;
+}
+
+.title-items-delivery {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  margin-bottom: 24px;
+  margin-right: 150px;
+}
+
+.delivery-description {
+  margin-left: 100px;
+  align-self: center;
+}
+
+.main-text-delivery {
+  margin-bottom: 32px;
+}
+
+.delivery-form-top {
+  margin: 0;
+  display: flex;
+
+}
+
+.fild-phone {
+  padding: 16px 14px;
+  width: 287px;
+  box-sizing: border-box;
+}
+
+.fild-form-phone {
+  display: block;
+  margin-left: 16px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.fild-date {
+  width: 117px;
+  padding: 16px 14px;
+  box-sizing: border-box;
+}
+
+
 
 /* Контакты */
 
