@@ -636,6 +636,7 @@ body {
   display: flex;
   background-image: url(../images/background/background-delivery.png);
   width: 1170px;
+  margin-bottom: 80px;
 }
 
 .delivery-main {
@@ -693,6 +694,17 @@ body {
 
 
 /* Контакты */
+
+.cotact {
+  background-image: url(../images/background/background-contact.jpg);
+}
+
+.contact-wrapper {
+  width: 343px;
+  margin: 64px 64px;
+  padding: 40px 40px 42px 40px;
+  background-color: #fcfcfc;
+}
 
 .contact-text {
   font-size: 20px;
