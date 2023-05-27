@@ -170,6 +170,32 @@ body {
   vertical-align: middle;
 }
 
+.navigation-link-menu:hover {
+  background-color: #ffcbd8;
+  border-radius: 50px;
+}
+
+.navigation-link-menu:active {
+  background-color: #fcfcfc;
+  border-radius: 50px;
+  border: none;
+}
+
+.navigation-link-menu:focus {
+  background-color: #ffcbd8;
+  border-radius: 50px;
+  border: 2px solid #000000;
+}
+
+.navigation-link-right:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.navigation-link-right:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #000000;
+}
+
 /* Слайдер */
 .main-index {
   width: 1170px;
@@ -309,7 +335,7 @@ body {
 .slider-controls {
   position: absolute;
   top: 230px;
-  right: 240px;
+  right: 262px;
   display: flex;
   justify-content: space-between;
   width: 365px;
@@ -345,8 +371,8 @@ body {
 }
 
 .slider-images {
-  align-self: center;
-  margin: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .slider-image-current {
@@ -950,4 +976,14 @@ body {
   padding: 0;
   text-decoration: none;
   color: #2d3440;
+}
+
+.catalog-pagination {
+  margin-top: 16px;
+  padding: 40px 0;
+}
+
+.help-link-catalog {
+  margin: 0 auto;
+  display: block;
 }
