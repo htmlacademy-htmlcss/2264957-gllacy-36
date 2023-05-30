@@ -60,6 +60,7 @@ body {
 }
 
 .navigation {
+  position: relative;
   display: flex;
   margin: 0 auto;
   margin-bottom: 24px;
@@ -83,6 +84,14 @@ body {
 
 .navigation-item {
   align-self: center;
+}
+
+.navigation-link-catalog {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 
@@ -205,6 +214,138 @@ body {
   outline: none;
 }
 
+/* Поповер каталог */
+
+.popover-catalog {
+  position: absolute;
+  background-color: #ffffff;
+  width: 138px;
+  padding: 16px 16px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.popover-title {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.popover-title::after {
+  content: "";
+  display: inline-block;
+  width: 103px;
+  border: 1px solid #b9b9b9;
+  margin-top: 4px;
+}
+
+.popover-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.popover-items {
+  margin: 0;
+  padding: 8px 0;
+}
+
+.popover-link-catalog {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+  padding: 0 0 8px 0;
+}
+
+.navigation-item-catalog:not(:focus-within) .popover-catalog {
+  display: none;
+}
+
+/* Поповер поиск */
+
+.navigation-item-search {
+  position: relative;
+}
+
+.popover-search {
+  position: absolute;
+  width: 356px;
+  background-color: #fcfcfc;
+  padding: 16px 24px;
+  z-index: 1;
+  right: 0;
+}
+
+.input-search {
+  padding: 16px 14px;
+  border: 2px solid #b9b9b9;
+  background-color: #ffffff;
+  color: #b9b9b9;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.navigation-item-search:not(:focus-within) .popover-search {
+  display: none;
+}
+
+/* Поповер вход */
+
+.navigation-item-enter {
+  position: relative;
+}
+
+.popover-enter {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 48px 48px;
+  width: 420px;
+  z-index: 2;
+  right: 0;
+}
+
+.popover-enter-title {
+  margin: 0 0 32px 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.popover-input-enter-mail {
+  margin-bottom: 16px;
+}
+
+.popover-input-enter-password {
+  margin-bottom: 32px;
+}
+
+.enter-wrapper {
+  display: flex;
+}
+
+.popover-enter-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.popover-enter-list {
+  margin: 0 0 0 23px;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+  display: block;
+}
+
+.navigation-item-enter:not(:focus-within) .popover-enter {
+  display: none;
+}
 /* Слайдер */
 .main-index {
   width: 1170px;
@@ -263,6 +404,11 @@ body {
   padding: 12px 32px;
   border-radius: 50px 50px 50px 50px;
   border: 4px solid rgba(252, 252, 252, 0.4);
+}
+
+.help-link-enter {
+  background-color: #ff2f64;
+  color: #fcfcfc;
 }
 
 .help-link-spinner::after {
@@ -737,6 +883,12 @@ body {
   background-color: #fcfcfc;
   padding: 40px 56px;
   margin-bottom: 80px;
+  border-radius: 16px;
+}
+
+.advantages-wrapper {
+  display: block;
+  overflow: hidden;
   border-radius: 16px;
 }
 
