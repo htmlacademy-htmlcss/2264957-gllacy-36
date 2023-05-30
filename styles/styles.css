@@ -346,6 +346,12 @@ body {
 .navigation-item-enter:not(:focus-within) .popover-enter {
   display: none;
 }
+/* Поповер корзина */
+
+.navigation-item-add:not(:focus-within) .popover-add {
+  display: none;
+}
+
 /* Слайдер */
 .main-index {
   width: 1170px;
@@ -645,7 +651,7 @@ body {
   background-clip: padding-box;
 }
 
-.social-link:focus {
+.social-link:focus-visible {
   background-color: #000000;
 }
 
@@ -661,7 +667,7 @@ body {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-.slider-pagination-button:focus {
+.slider-pagination-button:focus-visible {
   background-color: #fcfcfc;
   outline: none;
 }
