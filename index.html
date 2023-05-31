@@ -70,49 +70,60 @@
                 <p class="popover-mail">
                   <label class="visually-hidden" for="fild-popover-mail">
                     Почта</label>
-                  <input class="popover-input-enter popover-input-enter-mail input-search" type="mail" id="fild-popover-mail"
-                    name="fild-popover-mail" placeholder="email@example.com" required>
+                  <input class="popover-input-enter popover-input-enter-mail input-search" type="mail"
+                    id="fild-popover-mail" name="fild-popover-mail" placeholder="email@example.com" required>
                 </p>
                 <p class="popover-password">
                   <label class="visually-hidden" for="fild-password">
                     Пароль</label>
-                  <input class="popover-input-enter popover-input-enter-password  input-search" type="password" id="fild-password"
-                    name="fild-password" required>
+                  <input class="popover-input-enter popover-input-enter-password  input-search" type="password"
+                    id="fild-password" name="fild-password" required>
                 </p>
               </form>
-                <div class="enter-wrapper">
-                  <button class="help-link help-link-enter" type="submit">Войти</button>
-                  <ul class="popover-enter-list">
-                    <li class="popover-items-enter">
-                      <a class="popover-enter-link" href="#">Забыли пароль?</a>
-                    </li>
-                    <li class="popover-items-enter">
-                      <a class="popover-enter-link" href="#">Регистрация</a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="enter-wrapper">
+                <button class="help-link help-link-enter" type="button">Войти</button>
+                <ul class="popover-enter-list">
+                  <li class="popover-items-enter">
+                    <a class="popover-enter-link" href="#">Забыли пароль?</a>
+                  </li>
+                  <li class="popover-items-enter">
+                    <a class="popover-enter-link" href="#">Регистрация</a>
+                  </li>
+                </ul>
+              </div>
           </li>
           <li class="navigation-item navigation-item-right navigation-item-add">
             <button class="navigation-link navigation-link-right navigation-link-add" href="#">2 товара <span
                 class="visually-hidden">
                 Корзина
               </span></button>
-              <div class="popover-add">
-                <ul class="popover-list-add">
-                  <li class="popover-items-add">
-                    <img class="popover-picture" src="images/ice-cream/rasberries-small.png" width="46" height="46" alt="Селфи палка на сером фоне.">
-                    <a class="popover-link-add" href="#"><span class="link-description">Малинка</span>1 кг х 310 ₽</a>
-                    <button class="popover-close-button" type="button">
-                      <span class="visually-hidden">Закрыть</span>
-                    </button>
-                  </li>
-                  <li class="popover-items-add">
-                    <img class="popover-picture" src="images/ice-cream/babble-small.png" width="46" height="46" alt="Селфи палка на сером фоне.">
-                    <p class="popover-link-add" href="#"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</a>
-                    <button class="popover-close-button" type="button">
-                      <span class="visually-hidden">Закрыть</span>
-                    </button>
-                  </li>
+            <div class="popover-add">
+              <h2 class="popover-add-title">Корзина</h2>
+              <ul class="popover-list-add">
+                <li class="popover-items-add popover-items-add-rasberries">
+                  <img class="popover-picture" src="images/ice-cream/rasberries-small.png" width="46" height="46"
+                    alt="Селфи палка на сером фоне.">
+                  <p class="popover-link-add" href="#"><span class="link-description">Малинка</span>1 кг х 310 ₽</p>
+                  <p class="add-price">310 ₽</p>
+                  <button class="popover-close-button" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </li>
+                <li class="popover-items-add popover-items-add-babble">
+                  <img class="popover-picture" src="images/ice-cream/babble-small.png" width="46" height="46"
+                    alt="Селфи палка на сером фоне.">
+                  <p class="popover-link-add" href="#"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</a>
+                  <p class="add-price">480 ₽</p>
+                  <button class="popover-close-button" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="popover-add-bottom">
+              <button class="help-link help-link-add" type="button">Оформить заказ</button>
+              <p class="add-price-bottom">Итого: 790 ₽</p>
+            </div>
+            </div>
           </li>
         </ul>
       </nav>
