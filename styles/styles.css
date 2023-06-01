@@ -1421,9 +1421,99 @@ margin-bottom: 8px;
 .range-scale {
   position: relative;
   height: 2px;
-  border: 2px solid #565C66;
+  border: 2px solid rgba(86, 92, 102, 0.3);
+  background-color: rgba(86, 92, 102, 0.3);
+ margin-top: 27px;
  width: 164px;
 }
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color:#565c66;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #2d3440;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.range-toggle:hover {
+  background-color: #ffffff;
+  border: none;
+}
+
+.range-toggle:hover::after {
+  background-color: #2d3440;
+}
+
+.range-toggle:active {
+  background-color: #2d3440;
+}
+
+.range-toggle:focus-visible {
+  background-color: #ffffff;
+}
+
+.range-toggle:focus-visible::after {
+  background-color: #2d3440;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
 
 .catalog-filter-group {
   padding: 8px 8px;
