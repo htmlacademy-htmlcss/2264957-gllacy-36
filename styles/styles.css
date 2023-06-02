@@ -446,9 +446,9 @@ body {
 }
 
 .add-price-bottom {
-font-size: 18px;
-font-weight: 700;
-line-height: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
 }
 
 .navigation-item-add:not(:focus-within) .popover-add {
@@ -1356,11 +1356,18 @@ line-height: 22px;
 
 .main-inner {
   width: 1170px;
+  margin: 0 auto;
+}
+
+.inner-header-title {
+font-size: 32px;
+font-weight: 900;
+line-height: 46px;
 }
 
 .breadcrumbs {
   display: flex;
-  margin: 0;
+  margin: 32px 0 16px 0;
   padding: 0;
   list-style-type: none;
 }
@@ -1370,7 +1377,25 @@ line-height: 22px;
   padding: 0;
   text-decoration: none;
   color: #2d3440;
-}
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  }
+
+  .breadcrumbs-link-current {
+    text-decoration: underline;
+  }
+
+  .breadcrumbs-item:not(:last-child):after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 6px;
+    background-image: url(../images/icons/icon-double-arrow.svg);
+    background-position: center;
+    margin: 0 10px;
+  }
+
 
 .inner-header-title {
   margin: 0;
@@ -1401,8 +1426,18 @@ line-height: 22px;
 }
 
 /* Фильтр */
+
+.filter-title {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2d3440;
+}
+
 .select-control {
-  padding: 8px 63px 8px 16px;
+  padding: 8px 16px 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
   border: none;
   border-radius: 20px;
@@ -1411,26 +1446,59 @@ line-height: 22px;
 .popular {
   margin: 0;
   padding: 0;
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-margin-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.catalog-filter-group {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-top {
+  margin-top: 40px;
+  display: flex;
+}
+
+.filter-bottom {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 44px;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-title {
+  padding-bottom: 8px;
 }
 
 /* Рэндж */
 .range-scale {
   position: relative;
   height: 2px;
-  border: 2px solid rgba(86, 92, 102, 0.3);
   background-color: rgba(86, 92, 102, 0.3);
- margin-top: 27px;
- width: 164px;
+  width: 164px;
+  margin: 10px 16px;
+}
+
+.select-control-range {
+  width: 196px;
+}
+
+.select-control-fat {
+  width: 383px;
+}
+
+.select-control-fill {
+  width: 604px;
 }
 
 .range-bar {
   position: absolute;
   height: 2px;
-  background-color:#565c66;
+  background-color: #565c66;
 }
 
 .range-toggle {
@@ -1487,9 +1555,12 @@ margin-bottom: 8px;
   right: -10px;
 }
 
+.catalog-price-wrapper {
+  display: flex;
+}
+
 .range-wrapper-inputs {
   display: flex;
-  justify-content: center;
 }
 
 .catalog-filter-label {
@@ -1513,11 +1584,12 @@ margin-bottom: 8px;
   margin: 0;
 }
 
-
-
-.catalog-filter-group {
-  padding: 8px 8px;
+.button-filter {
+  padding: 8px 52px;
   background-color: rgba(252, 252, 252, 0.3);
-  border: none;
+  border: 2px solid #fcfcfc;
   border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
 }
