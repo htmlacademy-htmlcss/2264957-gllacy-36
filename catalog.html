@@ -19,7 +19,7 @@
               alt="Логотип магазина глейси">
           </li>
           <li class="navigation-item navigation-item-left navigation-item-catalog">
-            <button class="navigation-link navigation-link-menu navigation-link-catalog" href="#">Каталог</button>
+            <button class="navigation-link navigation-link-menu navigation-link-catalog" type="button">Каталог</button>
             <div class="popover-catalog">
               <h2 class="popover-title">Новинки</h2>
               <ul class="popover-list">
@@ -50,36 +50,38 @@
             <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item navigation-item-right navigation-item-search">
-            <button class="navigation-link navigation-link-right navigation-link-search" href="#"> <span
+            <button class="navigation-link navigation-link-right navigation-link-search" type="button"> <span
                 class="visually-hidden">
                 Поиск
               </span></button>
             <div class="popover-search">
               <form class="searh-form popover-input-enter" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="sending-search">Поиск</label>
-                <input class="input-search" placeholder="Поиск по сайту" type="search" name="sending-search"
+                <input class="input-search input-all" placeholder="Поиск по сайту" type="search" name="sending-search"
                   id="sending-search" required>
               </form>
             </div>
           </li>
           <li class="navigation-item navigation-item-right navigation-item-enter">
-            <button class="navigation-link navigation-link-right navigation-link-enter" href="#">Вход</button>
+            <button class="navigation-link navigation-link-right navigation-link-enter" type="button">Вход</button>
             <div class="popover-enter">
               <h2 class="popover-enter-title">Личный кабинет</h2>
               <form class="popover-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="popover-mail">
                   <label class="visually-hidden" for="fild-popover-mail">
                     Почта</label>
-                  <input class="popover-input-enter popover-input-enter-mail input-search" type="mail"
+                  <input class="popover-input-enter popover-input-enter-mail input-search input-all" type="email"
                     id="fild-popover-mail" name="fild-popover-mail" placeholder="email@example.com" required>
                 </p>
                 <p class="popover-password">
                   <label class="visually-hidden" for="fild-password">
                     Пароль</label>
-                  <input class="popover-input-enter popover-input-enter-password  input-search" type="password"
+                  <input class="popover-input-enter popover-input-enter-password  input-search input-all" type="password"
                     id="fild-password" name="fild-password" required>
                 </p>
               </form>
+            </div>
+
               <div class="enter-wrapper">
                 <button class="help-link help-link-enter" type="button">Войти</button>
                 <ul class="popover-enter-list">
@@ -112,7 +114,7 @@
                 <li class="popover-items-add popover-items-add-babble">
                   <img class="popover-picture" src="images/ice-cream/babble-small.png" width="46" height="46"
                     alt="Селфи палка на сером фоне.">
-                  <p class="popover-link-add" href="#"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</a>
+                  <p class="popover-link-add" href="#"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</p>
                   <p class="add-price">480 ₽</p>
                   <button class="popover-close-button" type="button">
                     <span class="visually-hidden">Закрыть</span>
@@ -160,10 +162,10 @@
 
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label catalog-filter-title">
-                  <input class="range-input filter-title" type="number" value="100" name="min-price"> ₽
+                  <input class="range-input filter-title input-all" type="number" value="100" name="min-price"> ₽
                 </label>
                 <label class="catalog-filter-label catalog-filter-title">
-                  <input class="range-input filter-title" type="number" value="500" name="max-price" style="width: 52px"> ₽
+                  <input class="range-input filter-title input-all" type="number" value="500" name="max-price" style="width: 52px"> ₽
                 </label>
               </div>
             </div>
@@ -181,20 +183,20 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="catalog-filter-group">
+        <fieldset class="catalog-filter-group catalog-filter-group-fat">
           <legend class="catalog-filter-title">Жирность:</legend>
           <div class="select-control select-control-fat">
             <label class="control">
-              <input class="control-input filter-title" type="radio" value="0%" name="precent">0%
+              <input class="control-input filter-title input-all " type="radio" value="0%" name="precent">0%
             </label>
             <label class="control">
-              <input class="control-input filter-title" type="radio" value="До 10%" name="precent" checked>До 10%
+              <input class="control-input filter-title input-all" type="radio" value="До 10%" name="precent" checked>До 10%
             </label>
             <label class="control">
-              <input class="control-input filter-title" type="radio" value="До 30%" name="precent">До 30%
+              <input class="control-input filter-title input-all" type="radio" value="До 30%" name="precent">До 30%
             </label>
             <label class="control">
-              <input class="control-input filter-title" type="radio" value="Свыше 30%" name="precent">Свыше 30%
+              <input class="control-input filter-title input-all" type="radio" value="Свыше 30%" name="precent">Свыше 30%
             </label>
           </div>
         </fieldset>
@@ -204,20 +206,20 @@
           <legend class="catalog-filter-title">Наполнители:</legend>
           <div class="select-control select-control-fill">
             <label class="control">
-              <input class="control-input filter-title " type="checkbox" value="шоколадные" name="precent" checked>шоколадные
+              <input class="control-input filter-title input-all" type="checkbox" value="шоколадные" name="precent" checked>шоколадные
             </label>
             <label class="control">
-              <input class="control-input filter-title" type="checkbox" value="сахарные посыпки" name="precent" checked>сахарные
+              <input class="control-input filter-title input-all" type="checkbox" value="сахарные посыпки" name="precent" checked>сахарные
               посыпки
             </label>
             <label class="control">
-              <input class="control-input filter-title" type="checkbox" value="фрукты" name="precent">фрукты
+              <input class="control-input filter-titleinput-all " type="checkbox" value="фрукты" name="precent">фрукты
             </label>
             <label class="control">
-              <input class="control-input filter-title" type="checkbox" value="сиропы" name="precent">сиропы
+              <input class="control-input filter-title input-all" type="checkbox" value="сиропы" name="precent">сиропы
             </label>
             <label class="control">
-              <input class="control-input filter-title" type="checkbox" value="джемы" name="precent">джемы
+              <input class="control-input filter-title input-all" type="checkbox" value="джемы" name="precent">джемы
             </label>
           </div>
         </fieldset>
@@ -395,7 +397,7 @@
           </li>
         </ul>
       </div>
-      </header>
+
     </main>
 
     <footer class="page-footer">
