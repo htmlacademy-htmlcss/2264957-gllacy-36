@@ -57,7 +57,7 @@
             <div class="popover-search">
               <form class="searh-form popover-input-enter" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="sending-search">Поиск</label>
-                <input class="input-search" placeholder="Поиск по сайту" type="search" name="sending-search"
+                <input class="input-search input-all" placeholder="Поиск по сайту" type="search" name="sending-search"
                   id="sending-search" required>
               </form>
             </div>
@@ -70,13 +70,13 @@
                 <p class="popover-mail">
                   <label class="visually-hidden" for="fild-popover-mail">
                     Почта</label>
-                  <input class="popover-input-enter popover-input-enter-mail input-search" type="mail"
+                  <input class="popover-input-enter popover-input-enter-mail input-search" type="email"
                     id="fild-popover-mail" name="fild-popover-mail" placeholder="email@example.com" required>
                 </p>
                 <p class="popover-password">
                   <label class="visually-hidden" for="fild-password">
                     Пароль</label>
-                  <input class="popover-input-enter popover-input-enter-password  input-search" type="password"
+                  <input class="popover-input-enter popover-input-enter-password  input-search input-all" type="password"
                     id="fild-password" name="fild-password" required>
                 </p>
               </form>
@@ -91,6 +91,7 @@
                   </li>
                 </ul>
               </div>
+            </div>
           </li>
           <li class="navigation-item navigation-item-right navigation-item-add">
             <button class="navigation-link navigation-link-right navigation-link-add" href="#">2 товара <span
@@ -112,7 +113,7 @@
                 <li class="popover-items-add popover-items-add-babble">
                   <img class="popover-picture" src="images/ice-cream/babble-small.png" width="46" height="46"
                     alt="Селфи палка на сером фоне.">
-                  <p class="popover-link-add" href="#"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</a>
+                  <p class="popover-link-add" href="#"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</p>
                   <p class="add-price">480 ₽</p>
                   <button class="popover-close-button" type="button">
                     <span class="visually-hidden">Закрыть</span>
@@ -363,7 +364,7 @@
             Честно =&#41;</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="sending-subscribe">Подписаться</label>
-            <input class="input-subscribe" placeholder="email@example.com" type="mail" name="sending-subscribe"
+            <input class="input-subscribe input-all" placeholder="email@example.com" type="mail" name="sending-subscribe"
               id="sending-subscribe" required>
             <button class="help-link button-subscribe" type="submit">Отправить</button>
           </form>
@@ -384,13 +385,13 @@
               <p class="field-group fild-form-date">
                 <label class="form-label" for="fild-date">
                   Дата</label>
-                <input class="field-delivery fild-date" type="text" id="fild-date" name="fild-date"
+                <input class="field-delivery fild-date input-all" type="text" id="fild-date" name="fild-date"
                   placeholder="01.04.2020" required>
               </p>
               <p class="field-group fild-form-phone">
                 <label class="form-label" for="fild-phone">
                   Телефон</label>
-                <input class="field-delivery fild-phone" type="tel" id="fild-phone" name="fild-phone"
+                <input class="field-delivery fild-phone input-all" type="tel" id="fild-phone" name="fild-phone"
                   placeholder="+7 800 999-00-00" required>
               </p>
             </div>
@@ -398,7 +399,7 @@
               <label class="form-label" for="fild-address">
                 Адрес
               </label>
-              <input class="field-delivery fild-address" type="text" id="fild-address" name="fild-address"
+              <input class="field-delivery fild-address input-all" type="text" id="fild-address" name="fild-address"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
             <button class="help-link help-link-delivery" type="submit">Отправить</button>
