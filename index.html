@@ -19,7 +19,7 @@
               alt="Логотип магазина глейси">
           </li>
           <li class="navigation-item navigation-item-left navigation-item-catalog">
-            <button class="navigation-link navigation-link-menu navigation-link-catalog" href="#">Каталог</button>
+            <button class="navigation-link navigation-link-menu navigation-link-catalog" type="button">Каталог</button>
             <div class="popover-catalog">
               <h2 class="popover-title">Новинки</h2>
               <ul class="popover-list">
@@ -50,7 +50,7 @@
             <a class="phone-number" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item navigation-item-right navigation-item-search">
-            <button class="navigation-link navigation-link-right navigation-link-search" href="#"> <span
+            <button class="navigation-link navigation-link-right navigation-link-search" type="button"> <span
                 class="visually-hidden">
                 Поиск
               </span></button>
@@ -63,7 +63,7 @@
             </div>
           </li>
           <li class="navigation-item navigation-item-right navigation-item-enter">
-            <button class="navigation-link navigation-link-right navigation-link-enter" href="#">Вход</button>
+            <button class="navigation-link navigation-link-right navigation-link-enter" type="button">Вход</button>
             <div class="popover-enter">
               <h2 class="popover-enter-title">Личный кабинет</h2>
               <form class="popover-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -94,7 +94,7 @@
             </div>
           </li>
           <li class="navigation-item navigation-item-right navigation-item-add">
-            <button class="navigation-link navigation-link-right navigation-link-add" href="#">2 товара <span
+            <button class="navigation-link navigation-link-right navigation-link-add" type="button">2 товара <span
                 class="visually-hidden">
                 Корзина
               </span></button>
@@ -104,7 +104,7 @@
                 <li class="popover-items-add popover-items-add-rasberries">
                   <img class="popover-picture" src="images/ice-cream/rasberries-small.png" width="46" height="46"
                     alt="Селфи палка на сером фоне.">
-                  <p class="popover-link-add" href="#"><span class="link-description">Малинка</span>1 кг х 310 ₽</p>
+                  <p class="popover-link-add"><span class="link-description">Малинка</span>1 кг х 310 ₽</p>
                   <p class="add-price">310 ₽</p>
                   <button class="popover-close-button" type="button">
                     <span class="visually-hidden">Закрыть</span>
@@ -113,7 +113,7 @@
                 <li class="popover-items-add popover-items-add-babble">
                   <img class="popover-picture" src="images/ice-cream/babble-small.png" width="46" height="46"
                     alt="Селфи палка на сером фоне.">
-                  <p class="popover-link-add" href="#"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</p>
+                  <p class="popover-link-add"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</p>
                   <p class="add-price">480 ₽</p>
                   <button class="popover-close-button" type="button">
                     <span class="visually-hidden">Закрыть</span>
@@ -351,7 +351,7 @@
       <!-- Блог -->
       <div class="news-wrapper grid-wrapper">
         <section class="blog">
-          <h2 class="main-text main-text-blog" href="#">Новое в нашем блоге</h2>
+          <h2 class="main-text main-text-blog">Новое в нашем блоге</h2>
           <a class="blog-description" href="#">10 способов сервировки фруктовых щербетов
             к столу</a>
         </section>
@@ -364,7 +364,7 @@
             Честно =&#41;</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="sending-subscribe">Подписаться</label>
-            <input class="input-subscribe input-all" placeholder="email@example.com" type="mail" name="sending-subscribe"
+            <input class="input-subscribe input-all" placeholder="email@example.com" type="email" name="sending-subscribe"
               id="sending-subscribe" required>
             <button class="help-link button-subscribe" type="submit">Отправить</button>
           </form>
@@ -465,6 +465,36 @@
         </p>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="modal-container">
+    <div class="modal modal-order">
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Мы обязательно ответим Вам!</h2>
+        <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group order-form-name">
+              <label class="visually-hidden" for="order-name">
+                Ваше имя</label>
+              <input class="field-modal fild-name" type="text" id="order-name" name="order-name"
+                placeholder="Имя и фамилия" required>
+            </p>
+            <p class="field-group order-form-mail">
+              <label class="visually-hidden" for="order-mail">
+                Ваш e-mail</label>
+              <input class="field-modal fild-mail" type="text" id="order-mail" name="order-mail" placeholder="email@example.com"
+                required>
+            </p>
+            <p class="field-group order-form-get`">
+              <label class="visually-hidden" for="order-get">Написать вопрос
+              </label>
+              <input class="field-modal fild-get" type="text" id="order-get" name="order-get"
+                placeholder="В свободной форме" required>
+            </p>
+        </form>
+          </div>
+    </div>
   </body>
 
 </html>

@@ -70,7 +70,7 @@
                 <p class="popover-mail">
                   <label class="visually-hidden" for="fild-popover-mail">
                     Почта</label>
-                  <input class="popover-input-enter popover-input-enter-mail input-search input-all" type="email"
+                  <input class="popover-input-enter popover-input-enter-mail input-search" type="email"
                     id="fild-popover-mail" name="fild-popover-mail" placeholder="email@example.com" required>
                 </p>
                 <p class="popover-password">
@@ -80,8 +80,6 @@
                     id="fild-password" name="fild-password" required>
                 </p>
               </form>
-            </div>
-
               <div class="enter-wrapper">
                 <button class="help-link help-link-enter" type="button">Войти</button>
                 <ul class="popover-enter-list">
@@ -93,9 +91,10 @@
                   </li>
                 </ul>
               </div>
+            </div>
           </li>
           <li class="navigation-item navigation-item-right navigation-item-add">
-            <button class="navigation-link navigation-link-right navigation-link-add" href="#">2 товара <span
+            <button class="navigation-link navigation-link-right navigation-link-add" type="button">2 товара <span
                 class="visually-hidden">
                 Корзина
               </span></button>
@@ -105,7 +104,7 @@
                 <li class="popover-items-add popover-items-add-rasberries">
                   <img class="popover-picture" src="images/ice-cream/rasberries-small.png" width="46" height="46"
                     alt="Селфи палка на сером фоне.">
-                  <p class="popover-link-add" href="#"><span class="link-description">Малинка</span>1 кг х 310 ₽</p>
+                  <p class="popover-link-add"><span class="link-description">Малинка</span>1 кг х 310 ₽</p>
                   <p class="add-price">310 ₽</p>
                   <button class="popover-close-button" type="button">
                     <span class="visually-hidden">Закрыть</span>
@@ -114,7 +113,7 @@
                 <li class="popover-items-add popover-items-add-babble">
                   <img class="popover-picture" src="images/ice-cream/babble-small.png" width="46" height="46"
                     alt="Селфи палка на сером фоне.">
-                  <p class="popover-link-add" href="#"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</p>
+                  <p class="popover-link-add"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</p>
                   <p class="add-price">480 ₽</p>
                   <button class="popover-close-button" type="button">
                     <span class="visually-hidden">Закрыть</span>
@@ -122,9 +121,9 @@
                 </li>
               </ul>
               <div class="popover-add-bottom">
-                <button class="help-link help-link-add" type="button">Оформить заказ</button>
-                <p class="add-price-bottom">Итого: 790 ₽</p>
-              </div>
+              <button class="help-link help-link-add" type="button">Оформить заказ</button>
+              <p class="add-price-bottom">Итого: 790 ₽</p>
+            </div>
             </div>
           </li>
         </ul>
@@ -148,28 +147,16 @@
       <section class="catalog-products">
         <h3 class="visually-hidden">Список товаров с фильтрами</h3>
         <p class="filter-title catalog-filter-title">Сортировка:</p>
-        <select class="select-control" aria-label="Сортировка">
+        <select class="select-control select-control-filter" aria-label="Сортировка">
           <option value="popular">По популярности</option>
         </select>
       </section>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
         <fieldset class="catalog-filter-group">
-          <div class="catalog-price-wrapper">
-            <legend class="catalog-filter-title">Цена:</legend>
 
+            <legend class="catalog-filter-title">Цена: <span>100</span> ₽ – <span>500</span> ₽</legend>
             <div class="range">
-
-              <div class="range-wrapper-inputs">
-                <label class="catalog-filter-label catalog-filter-title">
-                  <input class="range-input filter-title input-all" type="number" value="100" name="min-price"> ₽
-                </label>
-                <label class="catalog-filter-label catalog-filter-title">
-                  <input class="range-input filter-title input-all" type="number" value="500" name="max-price" style="width: 52px"> ₽
-                </label>
-              </div>
-            </div>
-          </div>
           <div class="select-control select-control-range">
             <div class="range-scale">
               <div class="range-bar" style="left: 24px; width: 56px">
@@ -182,12 +169,13 @@
               </div>
             </div>
           </div>
+            </div>
         </fieldset>
         <fieldset class="catalog-filter-group catalog-filter-group-fat">
           <legend class="catalog-filter-title">Жирность:</legend>
           <div class="select-control select-control-fat">
             <label class="control">
-              <input class="control-input filter-title input-all " type="radio" value="0%" name="precent">0%
+              <input class="control-input control-input-fat filter-title input-all " type="radio" value="0%" name="precent">0%
             </label>
             <label class="control">
               <input class="control-input filter-title input-all" type="radio" value="До 10%" name="precent" checked>До 10%
