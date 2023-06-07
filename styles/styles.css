@@ -69,7 +69,7 @@ body {
   margin-top: 24px;
 }
 
-.input-all {}
+
 
 .logo-header {
   display: block;
@@ -1098,7 +1098,6 @@ body {
   border-image: url(../images/background/background-advantages.jpg) 24 round round;
   background-color: #fcfcfc;
   padding: 40px 56px;
-  margin-bottom: 80px;
   border-radius: 16px;
 }
 
@@ -1106,6 +1105,7 @@ body {
   display: block;
   overflow: hidden;
   border-radius: 16px;
+  margin-bottom: 80px;
 }
 
 .title-items-advantages {
@@ -1182,7 +1182,7 @@ body {
   width: 570px;
   min-width: 224px;
   padding: 32px 0 67px 32px;
-
+border-radius: 16px;
 }
 
 .main-text-blog {
@@ -1213,6 +1213,11 @@ body {
   border-image: url(../images/background/background-subscribe.jpg) 6 round round;
   background-color: #fcfcfc;
   padding: 26px 26px;
+}
+
+.subscribe-wrapper {
+  display: block;
+  overflow: hidden;
   border-radius: 16px;
 }
 
@@ -1542,14 +1547,27 @@ body {
   width: 24px;
   height: 24px;
   align-items: center;
-
+  border-radius: 50%;
   box-sizing: border-box;
   justify-content: center;
 }
 
 .pagination-current {
   background-color: #ffffff;
-  border-radius: 50%;
+}
+
+.pagination-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-link:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 1px solid #fcfcfc;
+}
+
+.pagination-link:focus-visible {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2d3440;
 }
 
 .catalog-pagination {
@@ -1578,6 +1596,7 @@ body {
 }
 
 .select-control {
+  display: flex;
   padding: 8px 16px 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
   border: none;
@@ -1637,13 +1656,85 @@ body {
 
 .catalog-filter-title {
   padding-bottom: 8px;
+  color: #2d3440;
 }
 
 .catalog-filter-group-fat {
   margin-left: 24px;
 }
 
+/* Фильтр по жирности */
 
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.control-mark:not(.control-mark-current) {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2d3440;
+}
+
+.control-mark:hover {
+  border: 2px solid #fcfcfc;
+}
+
+.control-mark:active {
+  opacity: 0.5;
+}
+
+.control-mark-fat {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark-fat::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #2d3440;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-mark-fat:hover:after {
+  background-color: #fcfcfc;
+}
+
+.control-input[type="radio"]:checked + .control-mark-fat:active:after {
+  opacity: 0.5;
+}
+
+.control-mark-current {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  mask-image: url(../images/icons/icon-checkbox.svg);
+  -webkit-mask-image: url(../images/icons/icon-checkbox.svg);
+  background-color: #2d3440;
+  mask-size: 16px 16px;
+  -webkit-mask-size: 16px 16px;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.control-mark-current:hover {
+  background-color: #fcfcfc;
+}
+
+.control-mark-current:active {
+  opacity: 0.5;
+}
 
 /* Рэндж */
 .range-scale {
