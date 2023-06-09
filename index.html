@@ -13,11 +13,11 @@
     <h1 class="visually-hidden">Магазин Глейси</h1>
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list navigation-link-left">
-          <li class="navigation-header">
-            <img class="logo-header" src="images/icons/logo-gllasy.svg" width="137" height="56"
+        <a class="logo-main" href="index.html">
+        <img class="logo-header" src="images/icons/logo-gllasy.svg" width="137" height="56"
               alt="Логотип магазина глейси">
-          </li>
+            </a>
+        <ul class="navigation-list navigation-link-left">
           <li class="navigation-item navigation-item-left navigation-item-catalog">
             <button class="navigation-link navigation-link-menu navigation-link-catalog" type="button">Каталог</button>
             <div class="popover-catalog">
@@ -70,7 +70,7 @@
                 <p class="popover-mail">
                   <label class="visually-hidden" for="fild-popover-mail">
                     Почта</label>
-                  <input class="popover-input-enter popover-input-enter-mail input-search" type="email"
+                  <input class="popover-input-enter popover-input-enter-mail input-search input-all" type="email"
                     id="fild-popover-mail" name="fild-popover-mail" placeholder="email@example.com" required>
                 </p>
                 <p class="popover-password">
@@ -128,6 +128,7 @@
             <div class="popover-add-empty">
               <h2 class="visually-hidden">Пустая корзина</h2>
               <p class="popover-title-empty">Ваша корзина пока пуста</p>
+            </div>
           </li>
         </ul>
       </nav>
@@ -501,6 +502,7 @@
             </p>
             <button class="help-link help-link-modal" type="submit">Отправить</button>
         </form>
+      </section>
           </div>
     </div>
   </body>
