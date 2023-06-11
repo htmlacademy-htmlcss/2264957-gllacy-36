@@ -91,6 +91,7 @@ font-family: inherit;
 font-size: 16px;
 font-weight: 400;
 line-height: 20px;
+border: 1px solid #b9b9b9;
 }
 
 .input-all::placeholder {
@@ -207,7 +208,7 @@ border: 2px solid #2d3440;
   background-image: url(../images/icons/icon-arrow-bottom.svg);
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 6px;
+  margin-left: 10px;
   vertical-align: middle;
 }
 
@@ -569,7 +570,8 @@ border: 2px solid #2d3440;
 .slider-description {
   width: 429px;
   align-self: center;
-  margin-left: 70px;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 .title-items {
@@ -678,7 +680,7 @@ border: 2px solid #2d3440;
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: #ffcbd8;
+  background-color: rgba(255, 203, 216, 0.4);
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -723,8 +725,8 @@ border: 2px solid #2d3440;
 
 .slider-controls {
   position: absolute;
-  top: 230px;
-  right: 262px;
+  top: 240px;
+  right: 280px;
   display: flex;
   justify-content: space-between;
   width: 365px;
@@ -1062,7 +1064,7 @@ border: 2px solid #2d3440;
   display: grid;
   justify-content: center;
   grid-template-columns: 270px 270px 270px 270px;
-  gap: 30px;
+  gap: 40px 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1078,7 +1080,7 @@ border: 2px solid #2d3440;
 }
 
 .product-discription {
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 }
 
 .product-wrapper {
@@ -1094,7 +1096,7 @@ border: 2px solid #2d3440;
 
 .product-title {
   margin: 0;
-  padding: 0 0 8px 0;
+  padding: 0 0 13px 0;
 }
 
 .product-price {
@@ -1102,6 +1104,9 @@ border: 2px solid #2d3440;
   margin: 0;
   padding: 0;
   justify-content: space-between;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
 }
 
 .product-link-vr {
@@ -1479,8 +1484,9 @@ box-sizing: border-box;
 .footer-list {
   display: grid;
   grid-template-columns: 200px 250px;
-  gap: 8px 24px;
+  gap: 0 24px;
   list-style-type: none;
+  margin: 0;
 }
 
 .footer-item {
@@ -1491,7 +1497,7 @@ box-sizing: border-box;
 
 .logo-html-academy {
   display: block;
-  margin-left: 0;
+  margin: 0 auto;
 }
 
 .html-academy {
@@ -1573,7 +1579,7 @@ box-sizing: border-box;
   height: 6px;
   background-image: url(../images/icons/icon-double-arrow.svg);
   background-position: center;
-  margin: 0 10px;
+  margin: 0 8px 2px 8px;
 }
 
 
@@ -1660,6 +1666,7 @@ box-sizing: border-box;
 
 /* Фильтр */
 
+
 .filter-title {
   margin: 0;
   padding: 0;
@@ -1686,7 +1693,7 @@ box-sizing: border-box;
   background-image: url(../images/icons/icon-arrow-bottom.svg);
   background-repeat: no-repeat;
   background-position: right 16px center;
-  padding-right: 50px;
+  padding-right: 70px;
 }
 
 .select-control-filter:hover {
@@ -1713,28 +1720,28 @@ box-sizing: border-box;
   padding: 0;
 }
 
-.filter-top {
-  margin-top: 40px;
-  display: flex;
-}
-
-.filter-bottom {
-  display: flex;
-  margin-top: 16px;
-  margin-bottom: 44px;
-}
 
 .catalog-filter {
+  min-width: 823px;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 44px;
 }
 
 .catalog-filter-title {
   padding-bottom: 8px;
   color: #2d3440;
+  margin-left: 15px;
+font-family: inherit;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
 }
 
 .catalog-filter-group-fat {
   margin-left: 24px;
+  margin-bottom: 16px;
 }
 
 /* Фильтр по жирности */
@@ -1816,7 +1823,7 @@ box-sizing: border-box;
   height: 2px;
   background-color: rgba(86, 92, 102, 0.3);
   width: 164px;
-  margin: 9px 16px;
+  margin: 9px 0;
 }
 
 
