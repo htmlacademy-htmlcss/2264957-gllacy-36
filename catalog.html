@@ -8,32 +8,32 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body>
+  <body class="pink">
     <!--Главный заголовок -->
     <h1 class="visually-hidden">Магазин Глейси</h1>
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list navigation-link-left">
-          <li class="navigation-header">
-            <img class="logo-header" src="images/icons/logo-gllasy.svg" width="137" height="56"
+        <a class="logo-main" href="index.html">
+        <img class="logo-header" src="images/icons/logo-gllasy.svg" width="137" height="56"
               alt="Логотип магазина глейси">
-          </li>
+            </a>
+        <ul class="navigation-list navigation-link-left">
           <li class="navigation-item navigation-item-left navigation-item-catalog">
             <button class="navigation-link navigation-link-menu navigation-link-catalog" type="button">Каталог</button>
             <div class="popover-catalog">
               <h2 class="popover-title">Новинки</h2>
               <ul class="popover-list">
                 <li class="popover-items">
-                  <a class="popover-link popover-link-catalog" href="#">Сливочное</a>
+                  <a class="popover-link popover-link-catalog" href="catalog.html">Сливочное</a>
                 </li>
                 <li class="popover-items">
-                  <a class="popover-link popover-link-catalog" href="#">Щербеты</a>
+                  <a class="popover-link popover-link-catalog" href="catalog.html">Щербеты</a>
                 </li>
                 <li class="popover-items">
-                  <a class="popover-link popover-link-catalog" href="#">Фруктовый лед</a>
+                  <a class="popover-link popover-link-catalog" href="catalog.html">Фруктовый лед</a>
                 </li>
                 <li class="popover-items">
-                  <a class="popover-link popover-link-catalog" href="#">Мелорин</a>
+                  <a class="popover-link popover-link-catalog" href="catalog.html">Мелорин</a>
                 </li>
               </ul>
             </div>
@@ -70,7 +70,7 @@
                 <p class="popover-mail">
                   <label class="visually-hidden" for="fild-popover-mail">
                     Почта</label>
-                  <input class="popover-input-enter popover-input-enter-mail input-search" type="email"
+                  <input class="popover-input-enter popover-input-enter-mail input-search input-all" type="email"
                     id="fild-popover-mail" name="fild-popover-mail" placeholder="email@example.com" required>
                 </p>
                 <p class="popover-password">
@@ -103,8 +103,8 @@
               <ul class="popover-list-add">
                 <li class="popover-items-add popover-items-add-rasberries">
                   <img class="popover-picture" src="images/ice-cream/rasberries-small.png" width="46" height="46"
-                    alt="Селфи палка на сером фоне.">
-                  <p class="popover-link-add"><span class="link-description">Малинка</span>1 кг х 310 ₽</p>
+                    alt="Шарик мороженного розового цвета">
+                  <a class="popover-link-add" href="catalog.html"><span class="link-description">Малинка</span>1 кг х 310 ₽</a>
                   <p class="add-price">310 ₽</p>
                   <button class="popover-close-button" type="button">
                     <span class="visually-hidden">Закрыть</span>
@@ -112,8 +112,8 @@
                 </li>
                 <li class="popover-items-add popover-items-add-babble">
                   <img class="popover-picture" src="images/ice-cream/babble-small.png" width="46" height="46"
-                    alt="Селфи палка на сером фоне.">
-                  <p class="popover-link-add"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</p>
+                    alt="Шарик мороженного синего цвета">
+                  <a class="popover-link-add" href="catalog.html"><span class="link-description">Бабл-гам</span>1,5 кг х 320 ₽</a>
                   <p class="add-price">480 ₽</p>
                   <button class="popover-close-button" type="button">
                     <span class="visually-hidden">Закрыть</span>
@@ -124,6 +124,10 @@
               <button class="help-link help-link-add" type="button">Оформить заказ</button>
               <p class="add-price-bottom">Итого: 790 ₽</p>
             </div>
+            </div>
+            <div class="popover-add-empty">
+              <h2 class="visually-hidden">Пустая корзина</h2>
+              <p class="popover-title-empty">Ваша корзина пока пуста</p>
             </div>
           </li>
         </ul>
@@ -142,16 +146,18 @@
           <a class="breadcrumbs-link breadcrumbs-link-current" href="#">Сливочное мороженное</a>
         </li>
       </ul>
-      <h2 class="inner-header-title">Сливочное мороженное</h2>
-      <div class="filter-top">
-      <section class="catalog-products">
-        <h3 class="visually-hidden">Список товаров с фильтрами</h3>
-        <p class="filter-title catalog-filter-title">Сортировка:</p>
-        <select class="select-control select-control-filter" aria-label="Сортировка">
-          <option value="popular">По популярности</option>
-        </select>
-      </section>
+      <h2 class="inner-header-title">Сливочное мороженое</h2>
+
+
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+        <section class="catalog-products">
+          <h3 class="visually-hidden">Список товаров с фильтрами</h3>
+          <p class="filter-title catalog-filter-title">Сортировка:</p>
+          <select class="select-control select-control-filter" aria-label="Сортировка">
+            <option value="popular">По популярности</option>
+          </select>
+        </section>
 
         <fieldset class="catalog-filter-group">
 
@@ -159,11 +165,11 @@
             <div class="range">
           <div class="select-control select-control-range">
             <div class="range-scale">
-              <div class="range-bar" style="left: 24px; width: 56px">
-                <button class="range-toggle toggle-min">
+              <div class="range-bar" style="left: 30px; width: 70px">
+                <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
-                <button class="range-toggle toggle-max">
+                <button class="range-toggle toggle-max" type="button">
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </div>
@@ -196,8 +202,8 @@
             </label>
           </div>
         </fieldset>
-      </div>
-      <div class="filter-bottom">
+
+
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Наполнители:</legend>
           <div class="select-control select-control-fill">
@@ -229,8 +235,9 @@
           </div>
         </fieldset>
         <button class="button-filter" type="submit">Применить</button>
+
       </form>
-    </div>
+
       <ul class="product-list">
         <li class="product-item">
           <div class="product-wrapper">
@@ -250,7 +257,7 @@
               alt="Шарик мороженного фисташкового цвета с орешками">
             <h3 class="product-title">Фисташка</h3>
             <p class="product-discription main-text">Фисташковый пломбир с кусочками шоколада</p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">340 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
@@ -261,9 +268,9 @@
             <img class="ice-catalog-image" src="images/ice-cream/ice-blackberry.png" width="168" height="168"
               alt="Шарик мороженного кремового цвета с полосками черничного джема">
             <h3 class="product-title">Черника</h3>
-            <p class="product-discription main-text">Крем-брюле
+            <p class="product-discription main-text">Крем-брюле<br>
               с черничным джемом</p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">330 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
@@ -274,9 +281,9 @@
             <img class="ice-catalog-image" src="images/ice-cream/ice-babble.png" width="168" height="168"
               alt="Шарик мороженного синего цвета с разноцветной присыпкой">
             <h3 class="product-title">Бабл-гам</h3>
-            <p class="product-discription main-text">Ванильный пломбир
+            <p class="product-discription main-text">Ванильный пломбир<br>
               со сладкой посыпкой</p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">320 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
@@ -288,7 +295,7 @@
               alt="Шарик мороженного с цветными кусочками ежевичного джема">
             <h3 class="product-title">Ежевика</h3>
             <p class="product-discription main-text">Сливочное мороженое с ежевичным джемом</p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">330 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
@@ -301,7 +308,7 @@
             <h3 class="product-title">Банан</h3>
             <p class="product-discription main-text">Сливочный пломбир
               с банановым вкусом</p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">340 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
@@ -313,7 +320,7 @@
               alt="Шарик мороженного шоколадного цвета">
             <h3 class="product-title">Шоколадка</h3>
             <p class="product-discription main-text">Классический шоколадный пломбир</p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">270 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
@@ -326,7 +333,7 @@
             <h3 class="product-title">Клубничка</h3>
             <p class="product-discription main-text">Сливочный пломбир
               с клубничным вкусом</p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">300 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
@@ -351,7 +358,7 @@
             <h3 class="product-title">Ментол</h3>
             <p class="product-discription main-text">Сливочный пломбир
               с ментоловым сиропом</p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">320 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
@@ -363,7 +370,7 @@
               alt="Шарик мороженного зеленого цвета покрытый шоколадным сиропом">
             <h3 class="product-title">Орешек</h3>
             <p class="product-discription main-text">Фисташковый пломбир с шоколадным сиропом</p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">360 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
@@ -375,7 +382,7 @@
               alt="Шарик мороженного крем-брюле">
             <h3 class="product-title">Крем-брюле</h3>
             <p class="product-discription main-text">Классическое крем-брюле </p>
-            <p class="product-price"><b class="price">310 ₽/кг</b>
+            <p class="product-price"><b class="price">280 ₽/кг</b>
               <button class="product-link product-link-vr" type="button"><span
                   class="visually-hidden">Корзина</span></button>
             </p>
