@@ -171,7 +171,7 @@ border: 2px solid #2d3440;
 .navigation-link-right {
   display: inline-block;
   box-sizing: border-box;
-  background-color: #ffcbd8;
+  background-color: rgba(252, 252, 252, 0.3);
   border-radius: 50px 50px 50px 50px;
   border: 2px solid transparent;
 }
@@ -569,9 +569,14 @@ border: 2px solid #2d3440;
 
 .slider-description {
   width: 429px;
-  align-self: center;
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 119px;
+}
+
+.slider-list {
+  margin: 0;
+    margin-top: 18px;
+    margin-bottom: 5px;
 }
 
 .title-items {
@@ -657,7 +662,7 @@ border: 2px solid #2d3440;
   position: absolute;
   width: 327px;
   height: 312px;
-  background-color: #ffcbd8;
+  background-color: rgba(252, 252, 252, 0.3);
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -856,7 +861,7 @@ border: 2px solid #2d3440;
 }
 
 .social-item:not(:first-child) {
-  padding-left: 16px;
+  padding-left: 10px;
 }
 
 .social-link::after {
@@ -967,6 +972,11 @@ border: 2px solid #2d3440;
 
 .slider-peacture:not(.slider-peacture-current) {
   display: none;
+}
+
+.pagination-social {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Акции */
