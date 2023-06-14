@@ -86,12 +86,12 @@ body {
 }
 
 .input-all {
-color: #2d3440;
-font-family: inherit;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-border: 1px solid #b9b9b9;
+  color: #2d3440;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border: 1px solid #b9b9b9;
 }
 
 .input-all::placeholder {
@@ -99,17 +99,17 @@ border: 1px solid #b9b9b9;
 }
 
 .input-all:hover {
-border: 2px solid #2d3440;
+  border: 2px solid #2d3440;
 }
 
 .input-all:focus {
   border: 2px solid #2d3440;
-  }
+}
 
-  .input-all:disabled {
-    border: 2px solid #b9b9b9;
-    background-color: #e7e7e7;
-    }
+.input-all:disabled {
+  border: 2px solid #b9b9b9;
+  background-color: #e7e7e7;
+}
 
 /* Навигация */
 
@@ -575,8 +575,8 @@ border: 2px solid #2d3440;
 
 .slider-list {
   margin: 0;
-    margin-top: 18px;
-    margin-bottom: 5px;
+  margin-top: 18px;
+  margin-bottom: 5px;
 }
 
 .title-items {
@@ -1091,17 +1091,20 @@ border: 2px solid #2d3440;
 
 .product-discription {
   padding-bottom: 20px;
+font-family: inherit;
+font-size: 16px;
+line-height: 21px;
 }
 
 .product-wrapper {
   background-color: #fcfcfc;
-  padding: 0 40px 24px 40px;
+  padding: 0 40px 20px 40px;
   border-radius: 8px;
 }
 
 .ice-catalog-image {
   margin-top: -51px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .product-title {
@@ -1114,9 +1117,9 @@ border: 2px solid #2d3440;
   margin: 0;
   padding: 0;
   justify-content: space-between;
-font-size: 20px;
-font-weight: 700;
-line-height: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .product-link-vr {
@@ -1259,9 +1262,10 @@ line-height: 24px;
   background-repeat: no-repeat;
   width: 570px;
   min-width: 224px;
-  padding: 32px 0 67px 32px;
-border-radius: 16px;
-box-sizing: border-box;
+  padding: 32px 235px 67px 32px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background-size: cover;
 }
 
 .main-text-blog {
@@ -1287,18 +1291,21 @@ box-sizing: border-box;
 /* Подписаться */
 
 .subscribe {
-  width: 570px;
-  border: 6px solid;
-  border-image: url(../images/background/background-subscribe.jpg) 6 round round;
+  width: 558px;
   background-color: #fcfcfc;
   padding: 26px 26px;
   box-sizing: border-box;
+  border-radius: 16px;
 }
 
 .subscribe-wrapper {
+  background-image: url(../images/background/background-subscribe.jpg);
+  width: 570px;
   display: block;
   overflow: hidden;
   border-radius: 16px;
+  background-size: cover;
+  padding: 6px 6px;
 }
 
 .main-subscribe {
@@ -1337,7 +1344,7 @@ box-sizing: border-box;
   background-image: url(../images/background/background-delivery.png);
   width: 1170px;
   margin-bottom: 80px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -1487,9 +1494,6 @@ box-sizing: border-box;
   padding: 64px 0;
 }
 
-.footer-link-group {
-  display: flex;
-}
 
 .footer-list {
   display: grid;
@@ -1502,7 +1506,6 @@ box-sizing: border-box;
 .footer-item {
   margin: 0;
   padding: 0;
-  padding-bottom: 8px;
 }
 
 .logo-html-academy {
@@ -1514,7 +1517,6 @@ box-sizing: border-box;
   display: block;
   text-align: end;
   margin-left: 0 auto;
-  margin-bottom: 14px;
 }
 
 .footer-description {
@@ -1722,6 +1724,7 @@ box-sizing: border-box;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  color: #2d3440;
 }
 
 .catalog-filter-group {
@@ -1743,10 +1746,10 @@ box-sizing: border-box;
   padding-bottom: 8px;
   color: #2d3440;
   margin-left: 15px;
-font-family: inherit;
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .catalog-filter-group-fat {
@@ -1760,15 +1763,20 @@ line-height: 20px;
 .control {
   position: relative;
   display: block;
-  padding-left: 40px;
 }
+
+.select-control:not(:first-child) .control {
+  margin-left: 40px;
+}
+
+
 
 .control-mark:not(.control-mark-current) {
   position: absolute;
   top: 0;
   left: 16px;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border: 2px solid #2d3440;
 }
 
