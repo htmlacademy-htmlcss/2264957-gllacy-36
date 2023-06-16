@@ -1183,8 +1183,6 @@ line-height: 21px;
 
 /* Приемущества */
 .advantages {
-  border: 24px solid;
-  border-image: url(../images/background/background-advantages.jpg) 24 round round;
   background-color: #fcfcfc;
   padding: 40px 56px;
   border-radius: 16px;
@@ -1192,9 +1190,11 @@ line-height: 21px;
 
 .advantages-wrapper {
   display: block;
-  overflow: hidden;
   border-radius: 16px;
   margin-bottom: 80px;
+  background-image: url(../images/background/background-advantages.jpg);
+  background-size: cover;
+  padding: 24px 24px;
 }
 
 .title-items-advantages {
@@ -1307,7 +1307,6 @@ line-height: 21px;
 
 .subscribe-wrapper {
   background-image: url(../images/background/background-subscribe.jpg);
-  width: 570px;
   display: block;
   overflow: hidden;
   border-radius: 16px;
@@ -1369,11 +1368,11 @@ line-height: 21px;
   font-weight: 900;
   line-height: 46px;
   margin-bottom: 24px;
-  margin-right: 75px;
 }
 
 .delivery-description {
   margin-top: 100px;
+  margin-right: 75px;
 }
 
 .main-text-delivery {
