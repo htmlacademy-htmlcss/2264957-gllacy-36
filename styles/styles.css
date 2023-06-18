@@ -1836,20 +1836,19 @@ line-height: 20px;
 }
 
 .select-control .control:not(:first-child) {
-  margin-left: 40px;
   padding-left: 40px;
 }
 
 .control-first {
-  padding-left: 40px;
+  padding-left: 31px;
 }
 
 .control-mark:not(.control-mark-current) {
   position: absolute;
   top: 0;
   left: 16px;
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
   border: 2px solid #2d3440;
 }
 
@@ -2115,4 +2114,5 @@ line-height: 20px;
   font-weight: 400;
   line-height: 20px;
   border: 1px solid #b9b9b9;
+  box-sizing: border-box;
 }
