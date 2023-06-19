@@ -219,9 +219,13 @@ line-height: 20px;
   border-radius: 50px;
 }
 
+
 .navigation-link-catalog:focus::after {
   background-image: url(../images/icons/icon-arrow-top.svg);
 }
+
+
+
 
 
 
@@ -360,7 +364,7 @@ line-height: 20px;
   position: absolute;
   width: 356px;
   background-color: #fcfcfc;
-  padding: 16px 24px;
+  padding: 20px 16px;
   z-index: 1;
   right: 0;
   margin-top: 10px;
@@ -407,10 +411,20 @@ line-height: 20px;
 
 .popover-input-enter-mail {
   margin-bottom: 16px;
+  height: 48px;
 }
 
 .popover-input-enter-password {
   margin-bottom: 32px;
+  height: 48px;
+}
+
+.popover-mail {
+  margin: 0;
+}
+
+.popover-password {
+  margin: 0;
 }
 
 .enter-wrapper {
@@ -1577,11 +1591,17 @@ line-height: 20px;
 .footer-item {
   margin: 0;
   padding: 0;
+  padding-bottom: 8px;
 }
 
 .logo-html-academy {
   display: block;
   margin: 0 auto;
+}
+
+.logo-html-footer {
+  margin: 0;
+  padding-left: 50px;
 }
 
 .html-academy {
@@ -1741,13 +1761,18 @@ line-height: 20px;
 }
 
 .catalog-pagination {
-  margin-top: 16px;
+  display: flex;
+  margin-top: 12px;
   padding: 40px 0;
 }
 
 .help-link-catalog {
-  margin: 0 auto;
+  margin-left: auto;
   display: block;
+}
+
+.pagination{
+  padding-left: 345px;
 }
 
 .catalog-products {
@@ -1768,7 +1793,7 @@ line-height: 20px;
 
 .select-control {
   display: flex;
-  padding: 8px 16px 8px 16px;
+  padding: 9px 16px 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
   border: none;
   border-radius: 20px;
@@ -1845,11 +1870,11 @@ line-height: 20px;
 }
 
 .select-control .control {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
-.select-control .control:not(:last-child) {
-  padding-right: 16px;
+.select-control .control {
+  padding-right: 10px;
 }
 
 .control-mark {
@@ -1858,7 +1883,7 @@ line-height: 20px;
   left: 5px;
   width: 13px;
   height: 13px;
-  border: 2px solid #2d3440;
+  border: 1px solid #2d3440;
 }
 
 .control-mark:hover {
@@ -2042,6 +2067,10 @@ line-height: 20px;
 
 .product-title-catalog {
   margin-top: 5px;
+}
+
+.page-footer-catalog {
+  padding: 83px 0;
 }
 
 /* Модальное окно */
